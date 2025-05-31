@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting to the Survey...</title>
+  <script>
+    const forms = [
+      "https://docs.google.com/forms/d/e/1FAIpQLSe8wAlPS-1G0XyUAsr3M6TromQf70LNNi83_5IUztEXnIGuzg/viewform?usp=header", // with cues
+      "https://docs.google.com/forms/d/e/1FAIpQLSdGiqG9bMD5oDkkI7uofT17uXmz3mlaLzrDWicP32Sne_8O6g/viewform?usp=header"  // without cues
+    ];
+    const chosenForm = forms[Math.floor(Math.random() * forms.length)];
+    window.location.href = chosenForm;
+  </script>
+</head>
+<body>
+  <p>Перенаправляємо вас на опитування...</p>
+</body>
+</html>
